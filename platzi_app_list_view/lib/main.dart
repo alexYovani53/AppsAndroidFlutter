@@ -1,12 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:platzii_trips_app/card_image.dart';
-import 'package:platzii_trips_app/card_image_list.dart';
-import 'package:platzii_trips_app/description_place.dart';
-import 'package:platzii_trips_app/gradient_back.dart';
-import 'package:platzii_trips_app/header_appbar.dart';
-import 'package:platzii_trips_app/platzi_trips.dart';
-import 'package:platzii_trips_app/platzi_trips_cupertino.dart';
-import 'package:platzii_trips_app/review_list.dart';
+import 'package:platzi_app_list_view/list_review.dart';
+import 'package:platzi_app_list_view/review_item.dart';
 
 void main() {
   runApp(const MyApp());
@@ -33,14 +27,33 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       home: Scaffold(
-        /*        appBar: AppBar(
+        appBar: AppBar(
           title: Text(
-            'Hola mundo Feliz'
+            "Guatemala"
           ),
-        ),*/
-        //body: new DescriptionPlace("Bahamas",4,descriptionDummy),
-        body: PlatziTripsCupertino()
-      )
+        ),
+        body: Center(
+          child: Expanded(
+            child:
+              Container(
+                decoration: BoxDecoration(
+                    gradient: LinearGradient(
+                        colors: [
+                          Color(0xff00bbf0),
+                          Color(0xff29DE92)
+                        ],
+                        begin: FractionalOffset(0.2,0.0),
+                        end: FractionalOffset(1.0,0.6),
+                        stops: [0.0,0.6],
+                        tileMode: TileMode.clamp
+                    )
+                ),
+                child: new ListReview(),
+              )
+            ,
+          ),
+        ),
+      ),
     );
   }
 }
