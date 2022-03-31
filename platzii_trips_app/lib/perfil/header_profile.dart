@@ -8,11 +8,9 @@ class HeaderProfile extends StatelessWidget{
   @override
   Widget build(BuildContext context){
     
-    return Stack(
-      children: [
-        new GradientBack("Profile",350.0),
-        new InfoProfile()
-      ],
+    return Container(
+      child: new InfoProfile()
+
     );
   }
   

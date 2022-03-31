@@ -7,7 +7,6 @@ class CardImage extends StatelessWidget{
   
   String pathImage = "assets/img/Viajero.jpg";
 
-
   CardImage(this.pathImage);
 
   @override
@@ -44,7 +43,5 @@ class CardImage extends StatelessWidget{
       ],
     );
   }
-
-
 
 }

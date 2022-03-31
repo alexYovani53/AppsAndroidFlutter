@@ -90,6 +90,13 @@ flutter:
 
   assets:
     - assets/img/Viajero.jpg
+    - assets/img/cascada-amantes.jpg
+    - assets/img/laguna-luchua.jpg
+    - assets/img/laguna-brava.jpg
+    - assets/img/playa-blanca.jpg
+    - assets/img/rio-dulce.jpg
+    - assets/img/Semuc-Champey.jpg
+    - assets/img/volcan-pacaya.jpg
     - assets/img/perfil.jpg
 
   fonts:

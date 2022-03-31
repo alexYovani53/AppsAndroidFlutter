@@ -25,8 +25,8 @@ class InfoProfile extends StatelessWidget{
 
 
     final fotografia = Container(
-      height: 110.0,
-      width: 110.0,
+      height: 80.0,
+      width: 80.0,
       margin: EdgeInsets.all(15.0),
       decoration: BoxDecoration(
         shape: BoxShape.circle,
@@ -67,9 +67,10 @@ class InfoProfile extends StatelessWidget{
 
     return Container(
       margin: EdgeInsets.only(
-        top: 100.0
+        top: 100.0,
+        left: 15.0
       ),
-      height: 300.0,
+      height: 200.0,
       child: Column(
         children: [
           Row(
